@@ -8,7 +8,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SIAKAD Universitas Trunojoyo Madura</title>
-  <link rel="stylesheet" href="./style/style-landing-page.css">
+  <link rel="stylesheet" href="./css/style-landing-page.css">
 </head>
 <body>
   <header>
