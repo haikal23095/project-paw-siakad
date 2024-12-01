@@ -35,51 +35,19 @@
         <main class="main-content">
             <!-- Header -->
             <header class="header">
-                <h1>Selamat Datang User</h1>
+                <h1>Informasi Matakuliah</h1>
                 <button id="hamburger" class="hamburger">&#9776;</button> <!-- Tombol Hamburger -->
                 <a href="#" class="logout">Log Out</a>
             </header>
             <section class="welcome-message">
                 <p>
-                    Selamat Datang di Portal Akademik Universitas Trunojoyo Madura. 
-                    Portal Akademik adalah sistem yang memungkinkan para civitas akademika Universitas Trunojoyo Madura 
-                    untuk menerima informasi dengan lebih cepat melalui Internet. Sistem ini dihadirkan untuk memberi 
-                    kemudahan setiap civitas akademika untuk melakukan aktivitas-aktivitas akademik dan proses belajar mengajar.
-                    Selamat menggunakan fasilitas ini.
+                Informasi Matakuliah Ditawarkan berisi seluruh matakuliah yang ditawarkan pada semester aktif. Dari seluruh matakuliah yang terdapat pada daftar, setiap matakuliah mempunyai aturan tersendiri bergantung pada program studi, kurikulum, dan aturan akademik lainnya. Untuk lebih jelasnya, anda dapat melihat detail kelas
                 </p>
             </section>
-
-            <div class="content-grid">
-                <!-- Kotak Pesan -->
-                <div class="kotak-pesan">
-                    <h2>Kotak Pesan</h2>
-                    <p>Anda tidak memiliki pesan terbaru</p>
-                    <button>Kotak Masuk</button>
-                </div>
-
-                <!-- Pengumuman -->
-                <div class="pengumuman">
-                    <h2>Pengumuman</h2>
-                    <ul>
-                        <li>Informasi Akademik belum ada informasi untuk kategori ini</li>
-                        <li>Informasi Akademik belum ada informasi untuk kategori ini</li>
-                        <li>Informasi Akademik belum ada informasi untuk kategori ini</li>
-                    </ul>
-                </div>
-
-                <!-- Diskusi Terbaru -->
-                <div class="diskusi-terbaru">
-                    <h2>Diskusi Terbaru</h2>
-                    <ul>
-                        <li>Kritik dan saran SIAKAD UTM: kartu rencana studi tidak dapat dicetak</li>
-                        <li>Kritik dan saran SIAKAD UTM: proses validasi terlalu lama</li>
-                        <li>Kritik dan saran SIAKAD UTM: lebih baik ada fitur notifikasi</li>
-                    </ul>
-                </div>
-            </div>
+            
+            
         </main>
     </div>
-
     <script src="../scripts/script.js"></script>
 </body>
 </html>
