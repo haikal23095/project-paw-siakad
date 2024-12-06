@@ -120,8 +120,7 @@ body {
     font-size: 40px;
     color: #00509e;
     margin-right: 450px;
-    margin-top: 5px;
-    
+    margin-top: 5px;   
 }
 
 .header {
@@ -151,6 +150,18 @@ body {
 .content-grid {
     display: flex;
     gap: 20px;
+    height: 100px;
+    margin: 20px;
+}
+
+.column-grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column-grid h2{
+    margin-left: 50px;
 }
 
 .content-grid > div {
@@ -159,7 +170,9 @@ body {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    position: relative; /* Tambahkan ini untuk mengatur posisi anak elemen secara absolut */   
 }
+
 
 
 /* Judul di header */

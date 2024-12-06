@@ -47,29 +47,56 @@
                 <h1 class="dashboard-title">Dashboard</h1>
             </div>
             <div class="content-grid">
-
                 <!-- Pengumuman -->
-                <div class="pengumuman">
-                    <h2>Pengumuman</h2>
-                    <ul>
-                        <li>Informasi Akademik belum ada informasi untuk kategori ini</li>
-                        <li>Informasi Akademik belum ada informasi untuk kategori ini</li>
-                        <li>Informasi Akademik belum ada informasi untuk kategori ini</li>
-                    </ul>
+                <div class="column-grid">
+                    <h2>Kelola Diskusi</h2>
+                    <img src="../assets/img/Settings.png" alt="sttings-icon" class="icon-settings">
                 </div>
-
                 <!-- Diskusi Terbaru -->
-                <div class="diskusi-terbaru">
-                    <h2>Diskusi Terbaru</h2>
-                    <ul>
-                        <li>Kritik dan saran SIAKAD UTM: kartu rencana studi tidak dapat dicetak</li>
-                        <li>Kritik dan saran SIAKAD UTM: proses validasi terlalu lama</li>
-                        <li>Kritik dan saran SIAKAD UTM: lebih baik ada fitur notifikasi</li>
-                    </ul>
+                <div class="column-grid">
+                    <h2>Kalender Akademik</h2>
+                    <img src="../assets/img/Settings.png" alt="sttings-icon" class="icon-settings">
                 </div>
-
             </div>
 
+            <div class="content-grid">
+                <!-- Pengumuman -->
+                <div class="column-grid">
+                    <h2>Kelola Pengumuman</h2>
+                    <img src="../assets/img/Settings.png" alt="sttings-icon" class="icon-settings">
+                </div>
+                <!-- Diskusi Terbaru -->
+                <div class="column-grid">
+                    <h2>KRS</h2>
+                    <img src="../assets/img/Settings.png" alt="sttings-icon" class="icon-settings">
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <!-- Pengumuman -->
+                <div class="column-grid">
+                    <h2>Kelola Pesan Selamat Datang</h2>
+                    <img src="../assets/img/Settings.png" alt="sttings-icon" class="icon-settings">
+                </div>
+                <!-- Diskusi Terbaru -->
+                <div class="column-grid">
+                    <h2>Jadwal KRS</h2>
+                    <img src="../assets/img/Settings.png" alt="sttings-icon" class="icon-settings">
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <!-- Pengumuman -->
+                <div class="column-grid">
+                    <h2>Akun Pengguna</h2>
+                    <img src="../assets/img/Settings.png" alt="sttings-icon" class="icon-settings">
+                </div>
+                <!-- Diskusi Terbaru -->
+                <div class="column-grid">
+                    <h2>Profile</h2>
+                    <img src="../assets/img/Settings.png" alt="sttings-icon" class="icon-settings">
+                </div>
+            </div>
         </main>
     </div>
 
