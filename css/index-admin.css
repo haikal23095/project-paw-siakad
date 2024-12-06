@@ -25,16 +25,14 @@ body {
     position: fixed;
     top: 0;
     left: -100%; /* Tersembunyi secara default */
-    width: 35%;
+    width: 250px; /* Lebar sidebar */
     height: 100%;
     background-color: #002855;
     color: #fff;
-    transition: 0.3s ease;
-    z-index: 1000; /* Di bawah tombol hamburger */
-    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto; /* Tambahkan overflow-y untuk menangani konten yang panjang */
     padding-top: 20px;
-    /* padding-right: 100px; */
-    margin-right: 0px;
 }
 
 /* Sidebar aktif */
@@ -72,6 +70,10 @@ body {
     margin: 0;
 }
 
+.menu ul li:nth-child(1){
+    background-color: #00509e;
+}
+
 .sidebar .menu ul li:hover {
     background-color: #00509e;
     padding-left: 10px;
@@ -79,24 +81,57 @@ body {
 
 /* Main Content */
 .main-content {
-    width: 65%;
+    width: calc(100% - 250px); /* Sesuaikan dengan lebar sidebar */
     padding: 20px;
-    margin-left: 0px;
-    
-}
-
-.main-content header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-    
+    margin-left: 250px; /* Sesuaikan dengan lebar sidebar */
+    overflow-y: auto; /* Tambahkan overflow-y untuk menangani konten yang panjang */
 }
 
 .main-content header h1 {
-    font-size: 24px;
+    font-size: 25px;
     color: #00509e;
+}
+
+
+/* Kotak Pesan */
+.kotak-pesan{
+    display: flex;
+    border: 1px solid rgba(0, 0, 0,0.5);
+    border-radius: 10px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.kotak-pesan img{
+    width: 38px;
+    height: 23px;
+    padding: 17px 10px 0 15px;
+}
+
+.title-dashboard{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main-content .dashboard-title{
+    font-size: 40px;
+    color: #00509e;
+    margin-right: 450px;
+    margin-top: 5px;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Atur jarak antara elemen kiri dan kanan */
+    align-items: center; /* Pusatkan elemen secara vertikal */
+    padding: 10px 20px; /* Tambahkan padding untuk ruang */
+    background-color: #f5f5f5; /* Warna latar belakang */
+    border-bottom: 1px solid #ddd; /* Tambahkan garis bawah */
+    margin-bottom: 20px;
 }
 
 .main-content header .logout {
@@ -126,15 +161,6 @@ body {
     border-radius: 5px;
 }
 
-/* Header */
-.header {
-    display: flex;
-    justify-content: space-between; /* Atur jarak antara elemen kiri dan kanan */
-    align-items: center; /* Pusatkan elemen secara vertikal */
-    padding: 10px 20px; /* Tambahkan padding untuk ruang */
-    background-color: #f5f5f5; /* Warna latar belakang */
-    border-bottom: 1px solid #ddd; /* Tambahkan garis bawah */
-}
 
 /* Judul di header */
 .header h1 {
@@ -148,16 +174,6 @@ body {
     color: red;
     text-decoration: none;
     font-size: 14px;
-}
-
-/* Kotak Pesan */
-.kotak-pesan button {
-    background-color: #00509e;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 /* Diskusi & Pengumuman */
@@ -326,29 +342,18 @@ body {
 /* Sidebar di layar besar */
 @media screen and (min-width: 769px) {
     .sidebar {
-        position: static; /* Sidebar tetap di tempat */
+        position: fixed; /* Sidebar tetap di tempat */
         width: 250px; /* Lebar sidebar */
-        height: auto;
+        height: 100%;
         left: 0; /* Selalu terlihat di layar besar */
     }
 
     .main-content {
         margin-left: 250px; /* Sesuaikan dengan lebar sidebar */
     }
+
+    /* Default: Tombol hamburger tersembunyi di layar besar */
+    .hamburger {
+        display: none;
+    }
 }
-
-
-
-
-
-/* Dosen */
-
-
-
-
-
-
-
-
-
-/* Admin */

@@ -12,18 +12,16 @@
         <aside class="sidebar">
             <div class="profile-section">
                 <div class="avatar"></div>
-                <p>nama user & nim</p>
+                <p>nama user & nip</p>
             </div>
             <nav class="menu">
                 <ul>
                     <li><img src="../assets/icon-sidebar/mahasiswa/dashboard.png" alt=""><span>Dashboard</span></li>
                     <li><img src="../assets/icon-sidebar/mahasiswa/panduan.png" alt=""><span>Panduan</span></li>
                     <li><img src="../assets/icon-sidebar/mahasiswa/profile.png" alt=""><span>Profile</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/matakuliah.png" alt=""><span>Matakuliah</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/krs.png" alt=""><span>KRS</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/khs.png" alt=""><span>KHS</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/transkip.png" alt=""><span>Transkip Nilai</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/skripsi.png" alt=""><span>Pengajuan Judul Skripsi</span></li>
+                    <li><img src="../assets/icon-sidebar/dosen/mahasiswa bimbingan.png" alt=""><span>Mahasiswa Bimbingan</span></li>
+                    <li><img src="../assets/icon-sidebar/dosen/validasi krs.png" alt=""><span>Validasi KRS</span></li>
+                    <li><img src="../assets/icon-sidebar/dosen/val Judul Skripsi.png" alt=""><span>Validasi Judul Skripsi</span></li>
                     <li><img src="../assets/icon-sidebar/mahasiswa/akademik.png" alt=""><span>Akademik</span></li>
                     <li><img src="../assets/icon-sidebar/mahasiswa/password.png" alt=""><span>Ubah Password</span></li>
                     <li><img src="../assets/icon-sidebar/mahasiswa/faq.png" alt=""><span>FAQ</span></li>
@@ -80,6 +78,6 @@
         </main>
     </div>
 
-    <script src="../js/index-mahasiswa.js"></script>
+    <script src="../js/index-admin.js"></script>
 </body>
 </html>
