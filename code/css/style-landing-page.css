@@ -20,7 +20,6 @@
     background: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  
 
   .logo {
     display: flex;
@@ -102,7 +101,11 @@
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  
+  .login-form .alert{
+    color: red;
+    margin-bottom: 10px;
+
+  }
   .login-form p {
     font-size: 14px;
     margin-top: 10px;

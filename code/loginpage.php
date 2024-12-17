@@ -5,14 +5,9 @@ include_once($_SERVER["DOCUMENT_ROOT"] . "/config.php");
 include_once(BASEPATH . "/database.php");
 include_once(BASEPATH . "/functions.php");
 
-if (isset($_SESSION["user"])) {
-  
-}
-
 $errors = [];
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
     checklogin($_POST, $errors);
-
 }
 
 ?>
@@ -49,8 +44,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     <section class="login-section" id="login-form">
       <form class="login-form" method="POST">
         <h3>Form Login Civitas Academica</h3>
-        <input type="text" name="nim" placeholder="NIM" required>
+        <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
+        <div class="alert">
+        <?php
+        if (!empty($errors)) {
+          foreach ($errors as $error) {
+            echo $error . "<br>";
+          }
+        }
+        ?>
+        </div>
+        
         <button type="submit" class="btn-primary">Login</button>
         <p>Bagi civitas yang lupa ID atau password silakan hubungi bagian registrasi UTM.</p>
       </form>
@@ -59,6 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
       </div>
     </section>
   </main>
+
   <script src="./js/script.js"></script>
 </body>
 </html>

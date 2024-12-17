@@ -11,22 +11,22 @@
         <!-- Sidebar -->
         <aside class="sidebar">
             <div class="profile-section">
-                <div class="avatar"></div>
+                <a href="profile-page.php"><div class="avatar"></div></a>
                 <p>nama user & nim</p>
             </div>
             <nav class="menu">
                 <ul>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/dashboard.png" alt=""><span>Dashboard</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/panduan.png" alt=""><span>Panduan</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/profile.png" alt=""><span>Profile</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/matakuliah.png" alt=""><span>Matakuliah</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/krs.png" alt=""><span>KRS</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/khs.png" alt=""><span>KHS</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/transkip.png" alt=""><span>Transkip Nilai</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/skripsi.png" alt=""><span>Pengajuan Judul Skripsi</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/akademik.png" alt=""><span>Akademik</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/password.png" alt=""><span>Ubah Password</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/faq.png" alt=""><span>FAQ</span></li>
+                    <li><a href="index.php"><img src="../assets/icon-sidebar/mahasiswa/dashboard.png" alt=""><span>Dashboard</span></a></li>
+                    <li><a href=""><img src="../assets/icon-sidebar/mahasiswa/panduan.png" alt=""><span>Panduan</span></a></li>
+                    <li><a href=""><img src="../assets/icon-sidebar/mahasiswa/profile.png" alt=""><span>Profile</span></a></li>
+                    <li><a href="informasi-matakuliah.php"><img src="../assets/icon-sidebar/mahasiswa/matakuliah.png" alt=""><span>Informasi Matakuliah</span></a></li>
+                    <li><a href=""><img src="../assets/icon-sidebar/mahasiswa/krs.png" alt=""><span>KRS</span></a></li>
+                    <li><a href=""><img src="../assets/icon-sidebar/mahasiswa/khs.png" alt=""><span>KHS</span></a></li>
+                    <li><a href=""><img src="../assets/icon-sidebar/mahasiswa/transkip.png" alt=""><span>Transkip Nilai</span></a></li>
+                    <li><a href=""><img src="../assets/icon-sidebar/mahasiswa/skripsi.png" alt=""><span>Pengajuan Judul Skripsi</span></a></li>
+                    <li><a href=""><img src="../assets/icon-sidebar/mahasiswa/akademik.png" alt=""><span>Akademik</span></a></li>
+                    <li><a href="ubah-password.php"><img src="../assets/icon-sidebar/mahasiswa/password.png" alt=""><span>Ubah Password</span></a></li>
+                    <li><a href=""><img src="../assets/icon-sidebar/mahasiswa/faq.png" alt=""><span>FAQ</span></a></li>
                 </ul>
             </nav>
         </aside>

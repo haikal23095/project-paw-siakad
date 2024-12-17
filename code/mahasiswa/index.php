@@ -4,8 +4,13 @@ if (!isset($_SESSION["user"])) {
     header("Location: ../loginpage.php");
 }
 
+include_once($_SERVER["DOCUMENT_ROOT"] . "../config.php");
+include_once(BASEPATH .  "/database.php");
+include_once(BASEPATH . "/functions.php");
 
-
+if ($_SESSION['Level'] != 'mahasiswa') {
+    header("Location: ../loginpage.php");
+}
 ?>
 
 <!DOCTYPE html>
@@ -21,22 +26,22 @@ if (!isset($_SESSION["user"])) {
         <!-- Sidebar -->
         <aside class="sidebar">
             <div class="profile-section">
-                <div class="avatar"></div>
+                <a href="profile-page.php"><div class="avatar"></div></a>
                 <p>nama user & nim</p>
             </div>
             <nav class="menu">
                 <ul>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/dashboard.png" alt=""><span>Dashboard</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/panduan.png" alt=""><span>Panduan</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/profile.png" alt=""><span>Profile</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/matakuliah.png" alt=""><span>Matakuliah</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/krs.png" alt=""><span>KRS</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/khs.png" alt=""><span>KHS</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/transkip.png" alt=""><span>Transkip Nilai</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/skripsi.png" alt=""><span>Pengajuan Judul Skripsi</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/akademik.png" alt=""><span>Akademik</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/password.png" alt=""><span>Ubah Password</span></li>
-                    <li><img src="../assets/icon-sidebar/mahasiswa/faq.png" alt=""><span>FAQ</span></li>
+                    <li><a href="index.php"><img src="../assets/icon-sidebar/mahasiswa/dashboard.png" alt=""><span>Dashboard</span></a></li>
+                    <a href="panduan_mahasiswa.php"><li><img src="../assets/icon-sidebar/mahasiswa/panduan.png" alt=""><span>Panduan</span></li></a>
+                    <a href="profile_page.php"><li><img src="../assets/icon-sidebar/mahasiswa/profile.png" alt=""><span>Profile</span></li></a>
+                    <a href="informasi-matakuliah.php"><li><img src="../assets/icon-sidebar/mahasiswa/matakuliah.png" alt=""><span>Matakuliah</span></li></a>
+                    <a href="krs.php"><li><img src="../assets/icon-sidebar/mahasiswa/krs.png" alt=""><span>KRS</span></li></a>
+                    <a href="khs_mahasiswa.php"><li><img src="../assets/icon-sidebar/mahasiswa/khs.png" alt=""><span>KHS</span></li></a>
+                    <a href="transkrip_nilai.php"><li><img src="../assets/icon-sidebar/mahasiswa/transkip.png" alt=""><span>Transkrip Nilai</span></li>
+                    <a href="pengajuan_judul_skripsi.php"><li><img src="../assets/icon-sidebar/mahasiswa/skripsi.png" alt=""><span>Pengajuan Judul Skripsi</span></li></a>
+                    <a href="informasi_akademik_mahasiswa.php"><li><img src="../assets/icon-sidebar/mahasiswa/akademik.png" alt=""><span>Akademik</span></li></a>
+                    <a href="ubah-password.php"><li><img src="../assets/icon-sidebar/mahasiswa/password.png" alt=""><span>Ubah Password</span></li></a>
+                    <a href="index_faq_mahasiswa.php"><li><img src="../assets/icon-sidebar/mahasiswa/faq.png" alt=""><span>FAQ</span></li></a>
                 </ul>
             </nav>
         </aside>
@@ -47,7 +52,7 @@ if (!isset($_SESSION["user"])) {
             <header class="header">
                 <h1>Selamat Datang User</h1>
                 <button id="hamburger" class="hamburger">&#9776;</button> <!-- Tombol Hamburger -->
-                <a href="#" class="logout">Log Out</a>
+                <a href="../logout.php" class="logout" onclick="return confirm('apakah anda yakin ingin logout')" >Log Out</a>  
             </header>
             <section class="welcome-message">
                 <p>
@@ -92,4 +97,4 @@ if (!isset($_SESSION["user"])) {
 
     <script src="../js/index-mahasiswa.js"></script>
 </body>
-</html>
+</htm

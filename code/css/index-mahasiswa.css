@@ -35,6 +35,11 @@ body {
     padding-top: 20px;
 }
 
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
 /* Sidebar aktif */
 .sidebar.active {
     left: 0; /* Sidebar muncul */
@@ -53,10 +58,19 @@ body {
     margin: 0 auto 10px auto;
 }
 
+.sidebar .menu a {
+    text-decoration: none;
+    color: white;
+}
+
 .sidebar .menu ul li {
     padding: 10px 0;
     cursor: pointer;
     margin-left: 10px;
+}
+
+.menu ul li:nth-child(1) {
+    background-color: #00509e;
 }
 
 .sidebar .menu ul li span {
@@ -70,14 +84,11 @@ body {
     margin: 0;
 }
 
-.menu ul li:nth-child(1){
-    background-color: #00509e;
-}
-
 .sidebar .menu ul li:hover {
     background-color: #00509e;
     padding-left: 10px;
 }
+
 
 /* Main Content */
 .main-content {
